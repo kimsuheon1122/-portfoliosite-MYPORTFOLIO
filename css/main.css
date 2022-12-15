@@ -1,0 +1,27 @@
+.display_hidden{
+    opacity: 0;
+}
+.display_none{
+    display: none;
+}
+body{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.background_img{
+    animation-name: move_background;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+    height: 100%;
+}
+@keyframes move_background{
+    0%{
+        transform: translateX(0px);
+
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
+}

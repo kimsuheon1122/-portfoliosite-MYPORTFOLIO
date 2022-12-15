@@ -1,0 +1,33 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+* {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.main_cover {
+  position: absolute;
+  text-align: center;
+  border: 3px solid rgb(250, 43, 43);
+  font-size: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  transition: flex 0.3s ease-in;
+}
+.main_cover h3 {
+  transition: all 0.3s ease-in;
+  word-spacing: 100%;
+}
+.main_cover p {
+  transition: all 0.5s ease-in;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+/*# sourceMappingURL=main_cover.css.map */
