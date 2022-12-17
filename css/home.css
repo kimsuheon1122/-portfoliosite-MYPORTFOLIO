@@ -1,0 +1,22 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+#home {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+  justify-content: center;
+}
+#home .cart_wrap {
+  width: 80%;
+  height: 80%;
+  border: 1px solid white;
+}
+
+#chartjs-tooltip tr {
+  color: white;
+}
+
+/*# sourceMappingURL=home.css.map */

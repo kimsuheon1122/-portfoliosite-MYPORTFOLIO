@@ -1,0 +1,23 @@
+@import "mixvariables.scss";
+#home{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+    .cart_wrap{
+        width: 80%;
+        height: 80%;
+        border: 1px solid white;
+
+    }
+
+}
+
+#chartjs-tooltip{
+    tr{
+        color: white;
+    }
+}

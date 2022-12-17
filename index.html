@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main_cover.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src = "/js/pfmain.js"></script>
 </head>
 <body>
@@ -17,7 +20,23 @@
         <h3 class="display_hidden">항상 생각합니다.</h3>
         <h3 class="display_hidden">누군가는 필요로 하는 것.</h3>
         <h3 class="display_hidden">내가 기여할 수 있는 것.</h3>
-        <p class="display_hidden">고민하는 개발자 김수헌입니다.</p>
+        <p class="display_hidden">고민하는 개발자 <span>김수헌</span> 입니다.</p>
     </div>
+    <div id="nav" class="display_hidden">
+        <nav class="nav_wrap">
+            <ul>
+                <li>ABOUT ME</li>
+                <li>개발기록 & 개발일기</li>
+                <li>SKILL</li>
+                <li>프로젝트</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </div>
+    <div id = "home">
+        <div class="cart_wrap">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>      
 </body>
 </html>

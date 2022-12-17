@@ -1,12 +1,9 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
-* {
-  font-family: "Nanum Myeongjo", serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
 .main_cover {
+  font-family: "Nanum Myeongjo", serif;
   position: absolute;
   text-align: center;
-  border: 3px solid rgb(250, 43, 43);
   font-size: 30px;
   left: 0;
   top: 0;
@@ -23,11 +20,18 @@
 .main_cover h3 {
   transition: all 0.3s ease-in;
   word-spacing: 100%;
+  line-height: 1.5;
 }
 .main_cover p {
   transition: all 0.5s ease-in;
   font-weight: 600;
   font-size: 45px;
+  height: 80px;
+  margin-top: 80px;
+}
+.main_cover span {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 /*# sourceMappingURL=main_cover.css.map */
