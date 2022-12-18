@@ -5,14 +5,34 @@
   top: 120px;
   left: 0;
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+#home p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  font-family: "Nanum Myeongjo", serif;
+  letter-spacing: 5px;
 }
 #home .cart_wrap {
-  width: 80%;
-  height: 80%;
-  border: 1px solid white;
+  width: 70%;
+  height: 75%;
+  transition: border 0.5s ease-in;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.5s ease-in;
+}
+#home .cart_wrap.grow_up {
+  border-left: 10px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.7);
+}
+#home .cart_wrap #myChart {
+  transition: all 0.5s ease-in;
 }
 
 #chartjs-tooltip tr {

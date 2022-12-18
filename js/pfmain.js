@@ -2,7 +2,6 @@ const main_cover = document.getElementsByClassName("main_cover");
 const main_cover_h3 = document.querySelectorAll(".main_cover h3");
 const main_cover_p = document.querySelector(".main_cover p");
 
-
 var index= 0;
 
 let interval =
@@ -12,11 +11,15 @@ let interval =
             clearInterval(interval);
             index = 0;
         }
+
     },1500)
+
 setTimeout(function(){
     for(let i = 0; i<main_cover_h3.length; i++){
         main_cover_h3[i].classList.add("display_hidden");
     }
+    document.querySelector("#chartjs-tooltip").classList.add("display_none");
+
 },5500)
 
 setTimeout(function(){
@@ -30,8 +33,65 @@ setTimeout(function(){
 setTimeout(function(){
     main_cover[0].style["justify-content"] = 'flex-start'
     document.querySelector("#nav").classList.remove("display_hidden");
+
 },8000)
 
+setTimeout(function(){
+    document.querySelector("#home p").classList.remove("display_hidden");
+    document.querySelector("#home .cart_wrap").classList.remove("display_hidden");
+    document.querySelector("#home .cart_wrap").classList.add("grow_up");
+    document.querySelector("#chartjs-tooltip").classList.remove("display_hidden");
+},9000)
+
+setTimeout(function(){
+    document.querySelector("#myChart").classList.remove("display_hidden");
+    document.querySelector("#chartjs-tooltip").classList.remove("display_none");
+
+},10000)
+
+/* 곡선 점 클릭 화면 전환하기 */
+const chartClick = (e) => {
+    console.log(e);
+
+        document.querySelector("#home p").classList.add("display_hidden");
+        document.querySelector("#myChart").classList.add("display_hidden");
+        document.querySelector("#home .cart_wrap").classList.add("display_hidden");
+        document.querySelector("#chartjs-tooltip").classList.add("display_none");    
+    switch(e){
+        case(0):{
+            main_cover_p.innerHTML = "ABOUT ME"
+            console.log("0");
+            return;
+        }
+        case(1):{
+            main_cover_p.innerHTML = "개발기록 & 개발일기"
+            console.log("1");
+            return;
+ 
+
+        }
+        case(2):{
+            main_cover_p.innerHTML = "SKILL"
+
+            console.log("2");
+            return;
+
+        }
+        case(3):{
+
+            main_cover_p.innerHTML = "PROJECT"
+            console.log("3");
+
+            return;
+        }
+        case(4):{
+            main_cover_p.innerHTML = "CONTACT"
+            return;
+
+
+        }
+    }
+}
 /* 그래프 그리기 */
   const ctx = document.getElementById('myChart');
 const dataSet = [5, 10, 20, 40, 50, 60];
@@ -51,10 +111,8 @@ const dataSet = [5, 10, 20, 40, 50, 60];
         onClick : (e) => {
             const canvasPosition = Chart.helpers.getRelativePosition(e, chart);
             const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
-
-            console.log('dataX',dataX);
-
-        },            
+            chartClick(dataX);
+        },
         hoverRadius: 14,
         hoverBackgroundColor: 'white',
         plugins: {
@@ -105,13 +163,6 @@ const dataSet = [5, 10, 20, 40, 50, 60];
                         });
                         innerHtml += '</thead>';
 
-                        bodyLines.forEach(function(body, i) {
-                            const colors = tooltipModel.labelColors[i];
-                            let style = 'background:' + colors.backgroundColor;
-                            style += '; border-color:' + colors.borderColor;
-                            style += '; border-width: 2px';
-                        });
-
                         let tableRoot = tooltipEl.querySelector('table');
                         tableRoot.innerHTML = innerHtml;
                     }
@@ -134,15 +185,12 @@ const dataSet = [5, 10, 20, 40, 50, 60];
             legend: false
           },
         interaction: {
-            mode: 'nearest',
+            /* mode: 'nearest', */
             intersect: false,
             axis: 'x'
           },
-          events: ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove'],
     },
-    xAxis: {
-        visible: false,
-    }
+
   });
 
  
