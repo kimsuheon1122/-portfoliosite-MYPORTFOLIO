@@ -1,0 +1,49 @@
+@import "mixvariables.scss";
+#skill{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    color: white;
+    .skill_wrap{
+        height: calc(100vh - 120px);
+        ul{
+            height: calc(100vh - 120px);
+            padding: 50px 100px 70px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 30px;
+            font-weight: 600;
+            li{
+            text-align: center;
+            flex-basis: calc(100% / 3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+            height: 35%;
+                p{
+                    flex-basis: 40%;
+                }
+                img{
+                    width: 70%;
+                    height: 50%;
+                }
+                &:nth-child(2) img{
+                    width: 60%;
+                    height: 30%;
+                }
+                &:nth-child(6) img{
+                    width: 40%;
+                }
+                &:nth-child(9) img{
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

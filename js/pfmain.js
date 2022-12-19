@@ -1,7 +1,12 @@
 const main_cover = document.getElementsByClassName("main_cover");
 const main_cover_h3 = document.querySelectorAll(".main_cover h3");
 const main_cover_p = document.querySelector(".main_cover p");
+const home = document.querySelector("#home");
+const skill = document.querySelector("#skill");
 
+
+/* const tooltip = document.querySelector("#chartjs-tooltip");
+tooltip.classList.add("display_none"); */
 var index= 0;
 
 let interval =
@@ -18,7 +23,6 @@ setTimeout(function(){
     for(let i = 0; i<main_cover_h3.length; i++){
         main_cover_h3[i].classList.add("display_hidden");
     }
-    document.querySelector("#chartjs-tooltip").classList.add("display_none");
 
 },5500)
 
@@ -27,8 +31,8 @@ setTimeout(function(){
         main_cover_h3[i].classList.add("display_none");
     }
     main_cover_p.classList.remove("display_hidden");
-
 },5800)
+
 
 setTimeout(function(){
     main_cover[0].style["justify-content"] = 'flex-start'
@@ -40,12 +44,12 @@ setTimeout(function(){
     document.querySelector("#home p").classList.remove("display_hidden");
     document.querySelector("#home .cart_wrap").classList.remove("display_hidden");
     document.querySelector("#home .cart_wrap").classList.add("grow_up");
-    document.querySelector("#chartjs-tooltip").classList.remove("display_hidden");
+    /* document.querySelector("#chartjs-tooltip").classList.remove("display_hidden"); */
 },9000)
 
 setTimeout(function(){
     document.querySelector("#myChart").classList.remove("display_hidden");
-    document.querySelector("#chartjs-tooltip").classList.remove("display_none");
+    /* document.querySelector("#chartjs-tooltip").classList.remove("display_none"); */
 
 },10000)
 
@@ -72,8 +76,9 @@ const chartClick = (e) => {
         }
         case(2):{
             main_cover_p.innerHTML = "SKILL"
+            console.log("skill");
+            skill.classList.remove("display_none");
 
-            console.log("2");
             return;
 
         }

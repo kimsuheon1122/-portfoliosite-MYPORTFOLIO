@@ -33,11 +33,16 @@
         }
     }
 
-
 }
 
 #chartjs-tooltip{
     tr{
         color: white;
     }
+}
+
+#return_home{
+    position: absolute;
+    bottom: calc(100vh - 100px);
+    left: 30px;
 }
