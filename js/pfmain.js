@@ -2,12 +2,17 @@ const main_cover = document.getElementsByClassName("main_cover");
 const main_cover_h3 = document.querySelectorAll(".main_cover h3");
 const main_cover_p = document.querySelector(".main_cover p");
 const home = document.querySelector("#home");
+const return_home = document.querySelector(".return_home");
 const skill = document.querySelector("#skill");
-
+const project_slide = document.querySelector("#project_slide")
+const go_to_project_detail = document.querySelectorAll(".swiper-slide_inner img");
+const project_detail = document.querySelector("#project_detail");
 
 /* const tooltip = document.querySelector("#chartjs-tooltip");
 tooltip.classList.add("display_none"); */
 var index= 0;
+
+
 
 let interval =
     setInterval(function(){
@@ -53,14 +58,22 @@ setTimeout(function(){
 
 },10000)
 
+/* 홈 화면으로 돌아가기 */
+
+return_home.addEventListener('click', ()=>{
+    home.classList.remove("display_none");
+    skill.classList.add("display_none");
+    project_slide.classList.add("display_none");
+})
+
 /* 곡선 점 클릭 화면 전환하기 */
 const chartClick = (e) => {
     console.log(e);
-
-        document.querySelector("#home p").classList.add("display_hidden");
-        document.querySelector("#myChart").classList.add("display_hidden");
-        document.querySelector("#home .cart_wrap").classList.add("display_hidden");
-        document.querySelector("#chartjs-tooltip").classList.add("display_none");    
+    home.classList.add("display_none");
+/*         document.querySelector("#home p").classList.add("display_none");
+        document.querySelector("#myChart").classList.add("display_none");
+        document.querySelector("#home .cart_wrap").classList.add("display_none");
+        document.querySelector("#chartjs-tooltip").classList.add("display_none");  */   
     switch(e){
         case(0):{
             main_cover_p.innerHTML = "ABOUT ME"
@@ -86,7 +99,7 @@ const chartClick = (e) => {
 
             main_cover_p.innerHTML = "PROJECT"
             console.log("3");
-
+            project_slide.classList.remove("display_none");
             return;
         }
         case(4):{
@@ -97,6 +110,22 @@ const chartClick = (e) => {
         }
     }
 }
+
+/* project 디테일 페이지로 넘어가기 */
+go_to_project_detail.forEach((e, index)=>{
+    e.addEventListener("click", ()=>{
+        project_slide.classList.add("display_none");
+        project_detail.classList.remove("display_none");
+        console.log(index);
+        switch (index) {
+            case 0:
+                break;
+        
+            default:
+                break;
+        }
+    })
+})
 /* 그래프 그리기 */
   const ctx = document.getElementById('myChart');
 const dataSet = [5, 10, 20, 40, 50, 60];
@@ -195,8 +224,31 @@ const dataSet = [5, 10, 20, 40, 50, 60];
             axis: 'x'
           },
     },
-
   });
 
- 
+/* 프로젝트 스와이퍼 */
 
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  

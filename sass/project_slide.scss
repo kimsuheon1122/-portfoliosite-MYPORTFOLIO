@@ -1,0 +1,49 @@
+@import "mixvariables.scss";
+
+#project_slide{
+position: absolute;
+top: 120px;
+height: calc(100vh - 120px);
+width: 100%;
+color: rgba(255, 255, 255, 0.7);
+font-family: $nanum;
+.project_slide_wrap{
+  margin: 100px 200px;
+}
+  .swiper {
+    width: 100%;
+    .swiper-wrapper{
+      text-align: center;
+      .swiper-slide_inner{
+        p{
+          margin-top: 50px;
+          font-weight: 600;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* 스와이퍼 스타일 변경 */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin-left: 30px;
+}
+.swiper-pagination-bullet{
+  width: 45px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.swiper-button-next, .swiper-button-prev{
+  color: rgba(255, 255, 255, 0.3);
+  &:hover{
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+:root{
+  --swiper-navigation-size:80px;
+} 

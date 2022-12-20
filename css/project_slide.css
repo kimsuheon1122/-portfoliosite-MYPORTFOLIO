@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+#project_slide {
+  position: absolute;
+  top: 120px;
+  height: calc(100vh - 120px);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Nanum Myeongjo", serif;
+}
+#project_slide .project_slide_wrap {
+  margin: 100px 200px;
+}
+#project_slide .swiper {
+  width: 100%;
+}
+#project_slide .swiper .swiper-wrapper {
+  text-align: center;
+}
+#project_slide .swiper .swiper-wrapper .swiper-slide_inner p {
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* 스와이퍼 스타일 변경 */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-left: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 45px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: rgba(255, 255, 255, 0.3);
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+:root {
+  --swiper-navigation-size:80px;
+}
+
+/*# sourceMappingURL=project_slide.css.map */

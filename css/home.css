@@ -1,6 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
-#home {
+.home_wrap {
   position: absolute;
   top: 120px;
   left: 0;
@@ -13,13 +13,13 @@
   opacity: 1;
   transition: opacity 0.3s ease-in;
 }
-#home p {
+.home_wrap p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 30px;
   font-family: "Nanum Myeongjo", serif;
   letter-spacing: 5px;
 }
-#home .cart_wrap {
+.home_wrap .cart_wrap {
   width: 70%;
   height: 75%;
   transition: border 0.5s ease-in;
@@ -27,11 +27,11 @@
   border-bottom: 0;
   transition: all 0.5s ease-in;
 }
-#home .cart_wrap.grow_up {
+.home_wrap .cart_wrap.grow_up {
   border-left: 10px solid rgba(255, 255, 255, 0.7);
   border-bottom: 10px solid rgba(255, 255, 255, 0.7);
 }
-#home .cart_wrap #myChart {
+.home_wrap .cart_wrap #myChart {
   transition: all 0.5s ease-in;
 }
 
@@ -39,10 +39,12 @@
   color: white;
 }
 
-#return_home {
-  position: absolute;
-  bottom: calc(100vh - 100px);
-  left: 30px;
+.return_home {
+  position: fixed;
+  top: calc(100vh - 150px);
+  left: 100px;
+  width: 80px;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=home.css.map */

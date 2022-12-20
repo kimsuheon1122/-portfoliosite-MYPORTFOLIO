@@ -1,0 +1,59 @@
+@import "mixvariables.scss";
+#project_detail{
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 129px);
+    color: white;
+    .detail_project_wrap{
+        margin: 100px 200px;
+        display: flex;
+        column-gap: 100px;
+        .detail_left{
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            row-gap: 30px;
+        }
+        .detail_right{
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            li{
+                white-space: nowrap;
+                font-size: 30px;
+                line-height: 2;
+                i{
+                }
+                &:last-child{
+                    padding: 10px 30px;
+                    border: 2px solid rgba(255,255,255,0.7);
+                    background-color: rgb(53, 53, 53);
+                    border-radius: 100px;
+                }
+                .fa-regular.fa-keyboard{
+                    margin-left: 150px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .go_to_project_list{
+            height: 50px;
+            text-align: center;
+            img{
+                width: 120px;
+            }
+            p{
+                white-space: nowrap;
+                opacity: 0;
+                font-size: 20px;
+                line-height: 2;
+            }
+            &:hover p{
+                opacity: 1;
+            }
+        }
+    }
+}

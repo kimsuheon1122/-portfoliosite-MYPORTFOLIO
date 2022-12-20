@@ -1,0 +1,60 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+#project_detail {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 129px);
+  color: white;
+}
+#project_detail .detail_project_wrap {
+  margin: 100px 200px;
+  display: flex;
+  column-gap: 100px;
+}
+#project_detail .detail_project_wrap .detail_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  row-gap: 30px;
+}
+#project_detail .detail_project_wrap .detail_right {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#project_detail .detail_project_wrap .detail_right li {
+  white-space: nowrap;
+  font-size: 30px;
+  line-height: 2;
+}
+#project_detail .detail_project_wrap .detail_right li:last-child {
+  padding: 10px 30px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: rgb(53, 53, 53);
+  border-radius: 100px;
+}
+#project_detail .detail_project_wrap .detail_right li .fa-regular.fa-keyboard {
+  margin-left: 150px;
+  margin-right: 10px;
+}
+#project_detail .detail_project_wrap .go_to_project_list {
+  height: 50px;
+  text-align: center;
+}
+#project_detail .detail_project_wrap .go_to_project_list img {
+  width: 120px;
+}
+#project_detail .detail_project_wrap .go_to_project_list p {
+  white-space: nowrap;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 2;
+}
+#project_detail .detail_project_wrap .go_to_project_list:hover p {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=project_detail.css.map */
