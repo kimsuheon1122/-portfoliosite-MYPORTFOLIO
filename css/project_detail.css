@@ -6,9 +6,10 @@
   left: 0;
   width: 100%;
   height: calc(100vh - 129px);
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
 }
 #project_detail .detail_project_wrap {
+  padding-left: 100px;
   margin: 100px 200px;
   display: flex;
   column-gap: 100px;
@@ -19,6 +20,22 @@
   margin-right: 30px;
   row-gap: 30px;
 }
+#project_detail .detail_project_wrap .detail_left .detail_logo {
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#project_detail .detail_project_wrap .detail_left .detail_gif img {
+  width: 300px;
+  border-radius: 16px;
+}
+#project_detail .detail_project_wrap .detail_left .detail_gif .pc_gif {
+  width: 500px;
+}
 #project_detail .detail_project_wrap .detail_right {
   padding-top: 50px;
   display: flex;
@@ -27,14 +44,29 @@
 }
 #project_detail .detail_project_wrap .detail_right li {
   white-space: nowrap;
-  font-size: 30px;
-  line-height: 2;
+  line-height: 1.8;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 22px;
+}
+#project_detail .detail_project_wrap .detail_right li span {
+  font-size: 25px;
+  padding-left: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 600;
+  color: white;
 }
 #project_detail .detail_project_wrap .detail_right li:last-child {
+  margin-top: 30px;
   padding: 10px 30px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   background-color: rgb(53, 53, 53);
   border-radius: 100px;
+}
+#project_detail .detail_project_wrap .detail_right li:last-child a {
+  color: white;
+  font-size: 25px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 600;
 }
 #project_detail .detail_project_wrap .detail_right li .fa-regular.fa-keyboard {
   margin-left: 150px;
@@ -50,8 +82,9 @@
 #project_detail .detail_project_wrap .go_to_project_list p {
   white-space: nowrap;
   opacity: 0;
-  font-size: 20px;
   line-height: 2;
+  color: white;
+  font-weight: 600;
 }
 #project_detail .detail_project_wrap .go_to_project_list:hover p {
   opacity: 1;

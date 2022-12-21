@@ -45,6 +45,10 @@
   left: 100px;
   width: 80px;
   z-index: 2;
+  opacity: 0.5;
+}
+.return_home:hover {
+  fill: rgba(201, 70, 70, 0.548);
 }
 
 /*# sourceMappingURL=home.css.map */

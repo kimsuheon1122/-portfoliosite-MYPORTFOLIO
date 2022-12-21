@@ -8,15 +8,31 @@
   width: 100%;
   color: rgba(255, 255, 255, 0.7);
   font-family: "Nanum Myeongjo", serif;
+  text-align: center;
 }
 #project_slide .project_slide_wrap {
-  margin: 100px 200px;
+  margin: 50px 200px;
+}
+#project_slide .project_slide_wrap > p {
+  font-size: 25px;
+  line-height: 3;
+  font-weight: 600;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 }
 #project_slide .swiper {
   width: 100%;
 }
-#project_slide .swiper .swiper-wrapper {
-  text-align: center;
+#project_slide .swiper .swiper-wrapper .swiper-slide_inner .mobile_slide {
+  border-radius: 16px;
+  width: 350px;
+  height: 570px;
+}
+#project_slide .swiper .swiper-wrapper .swiper-slide_inner .com_slide {
+  width: 550px;
+  margin-top: 150px;
 }
 #project_slide .swiper .swiper-wrapper .swiper-slide_inner p {
   margin-top: 50px;
@@ -24,6 +40,14 @@
   font-size: 30px;
 }
 
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* 스와이퍼 스타일 변경 */
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 30px;

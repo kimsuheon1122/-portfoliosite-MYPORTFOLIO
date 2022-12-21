@@ -5,8 +5,9 @@
     left: 0;
     width: 100%;
     height: calc(100vh - 129px);
-    color: white;
+    color: rgba(255,255,255,0.7);
     .detail_project_wrap{
+        padding-left: 100px;
         margin: 100px 200px;
         display: flex;
         column-gap: 100px;
@@ -15,6 +16,25 @@
             flex-direction: column;
             margin-right: 30px;
             row-gap: 30px;
+            .detail_logo{
+                width: 200px;
+                background-color: rgba(255,255,255);
+                padding: 10px;
+                border-radius: 100px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            .detail_gif{
+                img{
+                    width: 300px;
+                    border-radius: 16px;
+                }
+                .pc_gif{
+                    width: 500px;
+                }
+            }
+
         }
         .detail_right{
             padding-top: 50px;
@@ -23,15 +43,28 @@
             justify-content: space-between;
             li{
                 white-space: nowrap;
-                font-size: 30px;
-                line-height: 2;
-                i{
+                line-height: 1.8;
+                font-family: $nanum;
+                font-size: 22px;
+                span{
+                    font-size: 25px;
+                    padding-left: 20px;
+                    font-family: $noto;
+                    font-weight: 600;
+                    color: white;
                 }
                 &:last-child{
+                    margin-top: 30px;
                     padding: 10px 30px;
                     border: 2px solid rgba(255,255,255,0.7);
                     background-color: rgb(53, 53, 53);
                     border-radius: 100px;
+                    a{
+                        color: white;
+                        font-size: 25px;
+                        font-family: $noto;
+                        font-weight: 600;
+                    }
                 }
                 .fa-regular.fa-keyboard{
                     margin-left: 150px;
@@ -48,8 +81,9 @@
             p{
                 white-space: nowrap;
                 opacity: 0;
-                font-size: 20px;
                 line-height: 2;
+                color: white;
+                font-weight: 600;
             }
             &:hover p{
                 opacity: 1;

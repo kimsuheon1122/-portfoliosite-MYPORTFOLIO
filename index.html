@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="./css/main_cover.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about_me.css">
     <link rel="stylesheet" href="./css/skill.css">
     <link rel="stylesheet" href="./css/project_slide.css">
     <link rel="stylesheet" href="./css/project_detail.css">
     <link rel="stylesheet" href="./css/contact.css">
 
-    <script src="https://kit.fontawesome.com/3bf6dd234b.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="https://kit.fontawesome.com/3bf6dd234b.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src = "/js/pfmain.js"></script>
 </head>
 <body>
     <img class="background_img" 
         src="./img/edgar-lopez-w9EUwWFPeT4-unsplash.jpg" alt="">
-    <div class="main_cover">
+    <div id="main_cover">
         <h3 class="display_hidden">항상 생각합니다.</h3>
         <h3 class="display_hidden">누군가는 필요로 하는 것.</h3>
         <h3 class="display_hidden">내가 기여할 수 있는 것.</h3>
@@ -48,23 +49,52 @@
                 <canvas id="myChart" class="display_hidden"></canvas>
             </div>
         </div>
-        
     </div>
-    <img src="./img/return_home.png" alt="" class="return_home">
-    <div id="abount_me">
+    <img src="./img/return_home.svg" alt="" class="return_home">
+    <div id="about_me" class="display_none site_menu">
         <div class="about_wrap">
-            <h3>안녕하세요. 프론트엔드 개발자를 꿈꾸는 <span>김수헌</span> 입니다.</h3>
+            <h2>"안녕하세요. 프론트엔드 개발자를 꿈꾸는 <span>김수헌</span> 입니다."</h2>
             <div class="profile_wrap">
-                <img src="" alt="">
-                <p></p>
+                <img src="./img/myprofile.jpg" alt="">
+                <p>
+                    첫 직장인 웹툰 플랫폼에서 작가들의 수익 정산을 담당하는 직무를 수행했습니다.<br />
+                    개발팀과 정산페이지 구축을 협업하는 과정에서 생각했습니다.<br />
+                    '서비스의 가장 앞단에서 이용자의 니즈와 기능 개발을 고민하는 일을 하고싶다.'<br />
+                    수 많은 서비스 사이에서, 아직 누군가는 필요로 하는 것을 늘 생각합니다.<br />
+                    '내가 기여할 수 있는 것'에 집중하여 서비스를 그려나가겠습니다.<br />
+                </p>
             </div>
             <div class="spac_wrap">
-                <div class="univ"></div>
-                <div class="exp"></div>
+                <div class="univ">
+                    <h4>학업사항</h4>
+                    <p>
+                        2015.03 ~ 2021.08 
+                        성신여자대학교 컴퓨터소프트웨어학
+                    </p>
+                </div>
+                <div class="exp">
+                    <h4>경력 & 대외활동</h4>
+                <p>
+                    2022.03 ~ 2022.06 
+                    미스터블루
+                </p>
+                <p>
+                    2020.09 ~ 2020.12 
+                    한국수자원공사 한강유역본부 계약직
+                </p>
+                <p>
+                    2019.08 ~ 2019.09 
+                    경희대학교 빅데이터 청년인재
+                </p>
+                <p>
+                    2018.08 ~ 2018.09 
+                    신한카드 빅데이터 썸머스쿨
+                </p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="dev_blog">
+    <div id="dev_blog" class="site_menu">
         <div class="blog_wrap">
             <div class="card"></div>
             <div class="card"></div>
@@ -72,7 +102,7 @@
         </div>
         <a href="" class="velog_link"></a>
     </div>
-    <div id="skill" class="display_none">
+    <div id="skill" class="display_none site_menu">
         <div class="skill_wrap">
             <ul>
                 <li>
@@ -117,34 +147,35 @@
             </ul>
         </div>
     </div>
-    <div id="project_slide" class="display_none">
+    <div id="project_slide" class="display_none site_menu">
         <div class="project_slide_wrap">
+        <p>프로젝트를 클릭하면, 더 자세한 내용을 보실 수 있습니다.</p>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <div class="swiper-slide_inner">
-                        <img src="https://via.placeholder.com/450X550" alt="">
+                        <img src="./img/shelter_cover.png" alt="" class="mobile_slide">
                         <p>강남구 따숨쉼터</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide_inner">                    
-                        <img src="https://via.placeholder.com/450X550" alt="">
+                        <img src="./img/toss-cover.JPG" alt="" class="mobile_slide">
                         <p>웹으로 만나는 토스뱅크</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide_inner">                    
-                        <img src="https://via.placeholder.com/450X550" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <img src="./img/zara-cover.JPG" alt="" class="com_slide">
+                        <p>부트스트랩을 이용한 ZARA 사이트 구현</p>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="swiper-slide_inner">                    
-                        <img src="https://via.placeholder.com/450X550" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <img src="./img/louvre-cover.JPG" alt="" class="com_slide">
+                        <p>그리드시스템을 활용한 Louvre 사이트 구현</p>
                     </div>
                   </div>
                 </div>
@@ -160,14 +191,11 @@
               </div>
         </div>
     </div>
-    <div id="project_detail" class="display_none">
+    <div id="project_detail" class="display_none site_menu">
         <div class="detail_project_wrap">
             <div class="detail_left">
                 <div class="detail_logo">
                     <img src="https://via.placeholder.com/400X100" alt="">
-                </div>
-                <div class="detail_screen">
-                    <img src="https://via.placeholder.com/400X200" alt="">
                 </div>
                 <div class="detail_gif">
                     <img src="https://via.placeholder.com/400X280" alt="">
@@ -175,15 +203,18 @@
             </div>
             <div class="detail_right">
                 <ul>
-                    <li>프로젝트명</li>
-                    <li>개발기간</li>
-                    <li>개발주요사항</li>
-                    <li>주요기능</li>
+                    <li>프로젝트명 <span class="detail_name"></span></li>
+                    <li>개발기간 <span class="detail_date"></span></li>
+                    <li>개발주요사항 <span class="detail_main"></span></li>
+                    <li>주요기능 <span class="detail_function"></span></li>
                     <li>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>강남구 따숨쉼터</span>  바로가기
-                        <i class="fa-regular fa-keyboard"></i>
-                        <i class="fa-solid fa-camera"></i>
+                        <a href="" class="detail_link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="project_name"></span>  바로가기
+                            <i class="fa-regular fa-keyboard"></i>
+                            <i class="fa-solid fa-camera"></i>
+                        </a>
+                        
                     </li>
                 </ul>
             </div>
@@ -193,7 +224,7 @@
             </div>
         </div>
     </div>
-    <div id="contact" class="display_none">
+    <div id="contact" class="display_none site_menu">
         <div class="contact_wrap">
             <p class="dot_ment">다섯번째 점을 찍어주세요 . </p>
             <div class="contact_info">

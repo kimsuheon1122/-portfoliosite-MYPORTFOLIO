@@ -1,0 +1,52 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+#about_me {
+  font-family: "Nanum Myeongjo", serif;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 120px);
+  color: white;
+}
+#about_me h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  line-height: 3;
+}
+#about_me .about_wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about_me .about_wrap p {
+  font-size: 30px;
+  line-height: 1.7;
+}
+#about_me .about_wrap .profile_wrap {
+  display: flex;
+  gap: 70px;
+}
+#about_me .about_wrap .profile_wrap img {
+  width: 200px;
+  border-radius: 70px;
+}
+#about_me .about_wrap .spac_wrap {
+  margin-top: 100px;
+  display: flex;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: start;
+  gap: 100px;
+}
+#about_me .about_wrap .spac_wrap h4 {
+  font-size: 25px;
+  font-family: "Nanum Gothic", sans-serif;
+  line-height: 3;
+  color: white;
+}
+#about_me .about_wrap .spac_wrap p {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=about_me.css.map */

@@ -7,14 +7,33 @@ height: calc(100vh - 120px);
 width: 100%;
 color: rgba(255, 255, 255, 0.7);
 font-family: $nanum;
+text-align: center;
 .project_slide_wrap{
-  margin: 100px 200px;
+  margin: 50px 200px;
+  >p{
+    font-size: 25px;
+    line-height: 3;
+    font-weight: 600;
+    animation-name: twinkle;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+  }
+  
 }
   .swiper {
     width: 100%;
     .swiper-wrapper{
-      text-align: center;
       .swiper-slide_inner{
+        .mobile_slide{
+          border-radius: 16px;
+          width: 350px;
+          height: 570px;
+        }
+        .com_slide{
+          width: 550px;
+          margin-top: 150px;
+        }
         p{
           margin-top: 50px;
           font-weight: 600;
@@ -24,7 +43,14 @@ font-family: $nanum;
     }
   }
 }
-
+@keyframes twinkle{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 /* 스와이퍼 스타일 변경 */
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
   margin-left: 30px;

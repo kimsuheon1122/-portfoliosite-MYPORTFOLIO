@@ -1,0 +1,50 @@
+@import "mixvariables.scss";
+
+#about_me{
+    font-family: $nanum;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    color: white;
+    h2{
+        margin-top: 50px;
+        font-size: 40px;
+        line-height: 3;
+    }
+    .about_wrap{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 30px;
+            line-height: 1.7;
+        }
+        .profile_wrap{
+            display: flex;
+            gap: 70px;
+            img{
+                width: 200px;
+                border-radius: 70px;
+            }
+        }
+        .spac_wrap{
+            margin-top: 100px;
+            display: flex;
+            color: rgba(255,255,255,0.7);
+            text-align: start;
+            gap: 100px;
+            h4{
+                font-size: 25px;
+                font-family: $noto;
+                line-height: 3;
+                color: white;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
