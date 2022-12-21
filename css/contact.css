@@ -1,0 +1,44 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+#contact {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 120px);
+  color: white;
+}
+#contact .contact_wrap {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+#contact .contact_wrap .dot_ment {
+  font-family: "Nanum Myeongjo", serif;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 3;
+  word-spacing: 10px;
+}
+#contact .contact_wrap .contact_info {
+  margin: 50px 0 80px 0;
+  line-height: 2;
+}
+#contact .contact_wrap .contact_info p:first-child {
+  font-size: 40px;
+}
+#contact .contact_wrap .contact_logo a {
+  margin-right: 50px;
+}
+#contact .contact_wrap .contact_logo a svg {
+  fill: rgba(255, 255, 255, 0.7);
+  width: 120px;
+}
+#contact .contact_wrap .contact_logo a svg:hover {
+  fill: white;
+}
+
+/*# sourceMappingURL=contact.css.map */

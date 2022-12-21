@@ -7,6 +7,7 @@ const skill = document.querySelector("#skill");
 const project_slide = document.querySelector("#project_slide")
 const go_to_project_detail = document.querySelectorAll(".swiper-slide_inner img");
 const project_detail = document.querySelector("#project_detail");
+const contact = document.querySelector("#contact");
 
 /* const tooltip = document.querySelector("#chartjs-tooltip");
 tooltip.classList.add("display_none"); */
@@ -64,6 +65,8 @@ return_home.addEventListener('click', ()=>{
     home.classList.remove("display_none");
     skill.classList.add("display_none");
     project_slide.classList.add("display_none");
+    project_detail.classList.add("display_none");
+    contact.classList.add("display_none");
 })
 
 /* 곡선 점 클릭 화면 전환하기 */
@@ -77,36 +80,28 @@ const chartClick = (e) => {
     switch(e){
         case(0):{
             main_cover_p.innerHTML = "ABOUT ME"
-            console.log("0");
             return;
         }
         case(1):{
             main_cover_p.innerHTML = "개발기록 & 개발일기"
-            console.log("1");
             return;
- 
-
         }
         case(2):{
             main_cover_p.innerHTML = "SKILL"
-            console.log("skill");
             skill.classList.remove("display_none");
 
             return;
 
         }
         case(3):{
-
             main_cover_p.innerHTML = "PROJECT"
-            console.log("3");
             project_slide.classList.remove("display_none");
             return;
         }
         case(4):{
             main_cover_p.innerHTML = "CONTACT"
+            contact.classList.remove("display_none");
             return;
-
-
         }
     }
 }
